@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LogInPage">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="758.0" prefWidth="1142.0">
+         <children>
+            <ImageView fitHeight="842.0" fitWidth="1142.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/registration-page-background-images-5.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="email" layoutX="393.0" layoutY="373.0" prefHeight="31.0" prefWidth="398.0" promptText="Email" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="471.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/test.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="434.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Online Exam">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="32.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="36.0" fitWidth="35.0" layoutX="342.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/username-and-password-icon-png-5.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="53.0" fitWidth="35.0" layoutX="342.0" layoutY="440.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/password-logo-png-3.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="login" layoutX="634.0" layoutY="513.0" mnemonicParsing="false" onAction="#loginclicked" prefHeight="31.0" prefWidth="157.0" text="Log In" />
+            <Label layoutX="829.0" layoutY="124.0" text="Are You New Here?" />
+            <Button fx:id="signup" layoutX="973.0" layoutY="119.0" mnemonicParsing="false" onAction="#signupclicked" text="Sign Up" />
+            <MenuButton fx:id="menubar" layoutX="399.0" layoutY="513.0" mnemonicParsing="false" onAction="#getStat" text="What's Your Status?">
+              <items>
+                  <MenuItem fx:id="Teacher" mnemonicParsing="false" onAction="#getTeacher" text="Teacher" />
+                <MenuItem fx:id="Student" mnemonicParsing="false" onAction="#getStudent" text="Student" />
+              </items>
+            </MenuButton>
+            <PasswordField fx:id="password" layoutX="396.0" layoutY="442.0" prefHeight="31.0" prefWidth="398.0" promptText="Password" />
+            <Label fx:id="errorout" layoutX="495.0" layoutY="605.0" prefHeight="21.0" prefWidth="201.0" textFill="RED">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="680.0" prefWidth="999.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BeforeAnswer">
+   <children>
+      <ImageView fitHeight="680.0" fitWidth="999.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/JD-PALLAS-Website-Geometric-Background-Teal.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="home" layoutX="52.0" layoutY="49.0" mnemonicParsing="false" onAction="#BackHome" prefHeight="31.0" prefWidth="147.0" text="Back to Home" />
+      <Label layoutX="52.0" layoutY="111.0" prefHeight="21.0" prefWidth="200.0" text="Question Name" textFill="#fffbfb">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="GetQName" layoutX="406.0" layoutY="170.0" prefHeight="31.0" prefWidth="543.0" />
+      <Label layoutX="406.0" layoutY="111.0" prefHeight="32.0" prefWidth="543.0" text="Write The Name Of The Question You Want To Attend " textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="728.0" layoutY="240.0" mnemonicParsing="false" onAction="#GoToAns" prefHeight="31.0" prefWidth="221.0" text="Go" />
+      <Label layoutX="479.0" layoutY="474.0" prefHeight="32.0" prefWidth="505.0" text="Please write the name as it is in the Question Name" textFill="RED">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="QuestionName" layoutX="52.0" layoutY="212.0" prefHeight="455.0" prefWidth="300.0" />
+      <Button layoutX="52.0" layoutY="170.0" mnemonicParsing="false" onAction="#SeeQues" prefHeight="31.0" prefWidth="158.0" text="See Question" />
+   </children>
+</AnchorPane>

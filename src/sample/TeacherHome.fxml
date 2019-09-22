@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="655.0" prefWidth="897.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TeacherHome">
+   <children>
+      <ImageView fitHeight="749.0" fitWidth="983.0" layoutX="-2.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/png_background_1049115.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="75.0" layoutY="55.0" prefHeight="40.0" prefWidth="673.0" text="Welcome To Teacher Home Page" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="teachername" layoutX="313.0" layoutY="151.0" prefHeight="40.0" prefWidth="99.0">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="setques" layoutX="75.0" layoutY="220.0" mnemonicParsing="false" onAction="#SetQuestions" prefHeight="40.0" prefWidth="211.0" text="Set Questions" />
+      <Button fx:id="notice" layoutX="75.0" layoutY="286.0" mnemonicParsing="false" onAction="#NotifyStudent" prefHeight="40.0" prefWidth="211.0" text="Notify Students" />
+      <Button layoutX="75.0" layoutY="355.0" mnemonicParsing="false" onAction="#ContactTeacher" prefHeight="40.0" prefWidth="211.0" text="Contact Teacher" />
+      <Button layoutX="75.0" layoutY="435.0" mnemonicParsing="false" onAction="#ContactStudent" prefHeight="40.0" prefWidth="211.0" text="Contact Student" />
+   </children>
+</AnchorPane>
